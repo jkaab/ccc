@@ -1,0 +1,20 @@
+on: [push, pull_request]
+
+jobs:
+  yay:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/cache@v1
+      with:
+        path: packages
+        key: packages-${{ hashFiles('package.config') }}
+        
+    - run: |
+        mkdir packages
+        cd packages
+        touch 1.txt
+        ls
+        cd ..
+        ls
+        cat package.config
