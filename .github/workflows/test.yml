@@ -13,6 +13,7 @@ jobs:
         
     - run: |
         echo "2" > packages.config
+        mkdir packages
         cd packages
         touch 2.txt
         ls
