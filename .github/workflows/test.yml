@@ -12,9 +12,9 @@ jobs:
         key: packages-${{ hashFiles('packages.config') }}
         
     - run: |
-        mkdir packages
+        echo "2" > packages.config
         cd packages
-        touch 1.txt
+        touch 2.txt
         ls
         cd ..
         ls
