@@ -17,4 +17,4 @@ jobs:
         ls
         cd ..
         ls
-        cat package.config
+        cat packages.config
