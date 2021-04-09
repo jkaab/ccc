@@ -9,7 +9,7 @@ jobs:
     - uses: actions/cache@v1
       with:
         path: packages
-        key: packages-${{ hashFiles('package.config') }}
+        key: packages-${{ hashFiles('packages.config') }}
         
     - run: |
         mkdir packages
